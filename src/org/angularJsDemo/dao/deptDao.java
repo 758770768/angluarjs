@@ -19,6 +19,8 @@ public class deptDao {
 		List<Dept> dl = null;
 		try {
 			dl = qr.query(conn, sql, new BeanListHandler<Dept>(Dept.class));
+			System.out.println(123);
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
